@@ -43,7 +43,9 @@ if(wm <= 360){
 }
 }
 }
-Mb();
+if(wm < 570) {
+    Mb();
+}
 
 window.addEventListener(`resize`, event =>{
     wm = $('body').width();
