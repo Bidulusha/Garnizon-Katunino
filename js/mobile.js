@@ -4,10 +4,12 @@ let Break = document.querySelector('.Break-point h1');
 let Fo = document.querySelector('.foto');
 let HeadText = document.querySelectorAll('.head-text');
 console.log(wm)
+
+
 function Mb(){
     
 if(360 < wm < 570){
-    s = 570-wm
+    
 
     for (var i = 0; i < HeadText.length; i++){
         HeadText[i].style.marginTop = 70 + 'px';
@@ -21,12 +23,12 @@ if(360 < wm < 570){
     Body[i].style.marginLeft = 0;
     Body[i].style.marginRight = 0;
     Body[i].style.fontSize = 15 + 'px';
-    console.log('w')
+    console.log('w1')
     Body[i].style.maxWidth = 'none';
 }
 }
 if(wm <= 360){
-    s = 570-wm
+ 
     
     for (var i = 0; i < HeadText.length; i++){
     HeadText[i].style.marginTop = 50 + 'px';
@@ -38,12 +40,12 @@ if(wm <= 360){
         Body[i].style.marginLeft = 0;
         Body[i].style.marginRight = 0;
         Body[i].style.fontSize = 14 + 'px';
-        console.log('w')
+        console.log('w2')
         Body[i].style.maxWidth = 'none';
 }
 }
 }
-if(wm < 570) {
+if (wm < 570){
     Mb();
 }
 
